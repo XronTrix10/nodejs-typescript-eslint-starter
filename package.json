@@ -1,0 +1,52 @@
+{
+  "name": "nodejs-typescript-eslint-starter",
+  "version": "1.0.0",
+  "description": "Starter template for nodejs with typescript and eslint 9",
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "eslint",
+    "winston",
+    "logger",
+    "eslint-9",
+    "production"
+  ],
+  "homepage": "https://github.com/XronTrix10/nodejs-typescript-eslint-starter#readme",
+  "bugs": {
+    "url": "https://github.com/XronTrix10/nodejs-typescript-eslint-starter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XronTrix10/nodejs-typescript-eslint-starter.git"
+  },
+  "license": "ISC",
+  "author": "Xron Trix",
+  "type": "commonjs",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node build/index.js\"",
+    "build": "tsc",
+    "start": "node build/index.js",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^22.14.0",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "eslint-import-resolver-typescript": "^4.3.2",
+    "eslint-plugin-import-x": "^4.10.2",
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3",
+    "winston": "^3.17.0"
+  },
+  "_moduleAliases": {
+    "@": "./build"
+  }
+}
